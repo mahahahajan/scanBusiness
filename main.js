@@ -12,6 +12,8 @@
      google.maps.event.addListener(autocomplete, 'place_changed', function() {
          //wanna show form and then populate it 
          form.style.display = "block";
+         var seenOn = document.getElementById('seen');
+        // seenOn.style.marginTop = "5%";
          var place = autocomplete.getPlace();
          //name field
          var businessName = document.getElementById('businessName');

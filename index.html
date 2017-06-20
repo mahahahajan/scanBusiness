@@ -99,7 +99,7 @@
             </center>
         </div> -->
         <div>
-        <img src="img/scan-locations-b-g-r.jpg" srcset="img/scan-locations-b-g-r@2x.jpg 2x,
+            <img src="img/scan-locations-b-g-r.jpg" srcset="img/scan-locations-b-g-r@2x.jpg 2x,
              img/scan-locations-b-g-r@3x.jpg 3x" class="ScanLocations_BGR">
             <header itemscope="">
                 <div class="col-md-12 col-sm-12 navBar">
@@ -124,17 +124,22 @@
         </div>
         <!-- /.site-header__search -->
         </div>
-        
         <br>
         <center>
-            <div >
-                <div >
+            <div>
+                <div class="container">
                     <h1 class="CheckBusiness"> Check how your business appears online </h1>
-                    <form  class="input" method="get" action="#">
+                    <form class="input" method="get" action="#">
                         <input id="hkb-search" class="input" type="text" value="" placeholder="Search for your business" name="s" autocomplete="off">
                     </form>
-                    <div id="scan-form" class="scan-form">
-                        <p>Your Business</p>
+                    <div id="scan-form" class=" offset-md-3 col-md-6 offset-sm-2 col-sm-5 scan-form overlay">
+                        <div>
+                        	<header class="info  col-md-12">
+                        		<h6 class="col-md-5 col-sm-5 Is-this-information"> Is this information correct? </h6>
+                        		<h6 class="If-not-please-enter"> If not, please enter the correct information in the fields below</h6>
+                        		<hr class="line">
+                        	</header>
+                        </div>
                         <form class="form-inline" id="frmRequestScan" method="post" action="" novalidate="novalidate">
                             <input type="hidden" id="hdnScanBusiness" name="hdnScanBusiness" value="1">
                             <input type="hidden" id="businessNumber" name="businessNumber" value="">
@@ -155,15 +160,12 @@
                                 <input type="text" class="form-control requiredField placeholder {validate:{required:true, phoneUS:true, messages:{required:'', phoneUS:'Please enter a valid Phone Number.'}}}" name="businessPhone" id="businessPhone" value="" placeholder="Business phone">
                                 <input type="text" class="form-control requiredField placeholder {validate:{required:true, postalcode:true, messages:{required:'', postalcode:'Please enter a valid Zipcode.'}}}" maxlength="100" name="zip" id="zip" value="" placeholder="Business zip code">
                             </div>
-                            <div class="validation-error">
-                                <p id="formerror" class="error-msg">Fields highlighted in red are required</p>
-                            </div>
-                            <button type="submit" class="offset-md-5 offest-sm-4 submit-btn">Scan Now</button>
+                            <button type="submit" class="submit-btn">Scan Now</button>
                         </form>
                     </div>
                 </div>
             </div>
-            <div class="As-seen-on">
+            <div class="As-seen-on" id="seen">
                 <h6> As seen on </h6>
             </div>
             <img src="img/logos.png" srcset="img/logos.png 1x, img/logos@2x.png 2x,
