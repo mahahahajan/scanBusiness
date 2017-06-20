@@ -1,6 +1,6 @@
  window.onload = function main() {
      var form = document.getElementById('scan-form');
-     form.style.display = 'none';
+     //form.style.display = 'none';
      var input = document.getElementById('hkb-search');
      
      var autocomplete = new google.maps.places.Autocomplete(input, "establishment");

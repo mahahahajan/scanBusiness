@@ -19,85 +19,7 @@
     </head>
 
     <body>
-        <!--<div>
-            <div style="background-color: white; height: 20px;" class=" col-lg-1">
-            </div>
-            <br>
-            <div style="background-color: red; height: 20px;" class=" col-md-1">
-            </div>
-            <br>
-            <div style="background-color: green; height: 20px;" class=" col-sm-1">
-            </div>
-            <br>
-            <div class="site-header">
-                <header class="site-header__banner" itemscope="">
-                    <div class="ht-container">
-                        <!-- .site-logo 
-                        <div class="site-logo">
-                            <a href="#">
-                                <img alt="" class="Logo-White" src="img/logo-white.svg">
-                            </a>
-                        </div>
-                        <!-- /.site-logo 
-                        <!-- .nav-primary 
-                        <div class="site-logo">
-                            <div class="Background">
-                                <div class="number"> 1 800 561 3357 </div>
-                            </div>
-                        </div>
-                        <!-- /.nav-primary 
-                    </div>
-                </header>
-                <!-- /.site-header 
-            </div>
-            <!-- /.site-header__search 
-            <img src="img/scan-locations-b-g-r.jpg" srcset="img/scan-locations-b-g-r@2x.jpg 2x,
-             img/scan-locations-b-g-r@3x.jpg 3x" class="ScanLocations_BGR">
-            <br>
-            <center>
-                <div class="site-header__search">
-                    <div class="ht-container">
-                        <h1 class="CheckBusiness"> Check how your business appears online </h1>
-                        <form class="hkb-site-search" method="get" action="#">
-                            <input id="hkb-search" class="input" type="text" value="" placeholder="Search for your business" name="s" autocomplete="off">
-                        </form>
-                        <div id="scan-form" class="scan-form">
-                            <p>Your Business</p>
-                            <form class="form-inline" id="frmRequestScan" method="post" action="" novalidate="novalidate">
-                                <input type="hidden" id="hdnScanBusiness" name="hdnScanBusiness" value="1">
-                                <input type="hidden" id="businessNumber" name="businessNumber" value="">
-                                <input type="hidden" id="zohoLeadId" name="zohoLeadId" value="">
-                                <div class="w-100">
-                                    <input type="text" class="form-control requiredField placeholder {validate:{required:true, minlength:2, messages:{required:'', minlength:'Business Name should be > {0} characters.'}}}" maxlength="100" name="businessName" id="businessName" value="" placeholder="Business name">
-                                    <select id="businessLocations" name="businessLocations" class="form-control requiredField placeholder {validate:{required:true, messages:{required:''}}}" placeholder="One location">
-                                        <option value="">Business locations</option>
-                                        <option value="1" selected="selected">1 location</option>
-                                        <option value="2-9">2-9 locations</option>
-                                        <option value="10-29">10-29 locations</option>
-                                        <option value="30-199">30-199 locations</option>
-                                        <option value="200+">200+ locations</option>
-                                        <option value="agency">Agency</option>
-                                    </select>
-                                </div>
-                                <div class="w-100 businessFields">
-                                    <input type="text" class="form-control requiredField placeholder {validate:{required:true, phoneUS:true, messages:{required:'', phoneUS:'Please enter a valid Phone Number.'}}}" name="businessPhone" id="businessPhone" value="" placeholder="Business phone">
-                                    <input type="text" class="form-control requiredField placeholder {validate:{required:true, postalcode:true, messages:{required:'', postalcode:'Please enter a valid Zipcode.'}}}" maxlength="100" name="zip" id="zip" value="" placeholder="Business zip code">
-                                </div>
-                                <div class="validation-error">
-                                    <p id="formerror" class="error-msg">Fields highlighted in red are required</p>
-                                </div>
-                                <button type="submit" class="submit-btn">Scan Now</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="As-seen-on">
-                    <h6> As seen on </h6>
-                </div>
-                <img src="img/logos.png" srcset="img/logos.png 1x, img/logos@2x.png 2x,
-             img/logos@3x.png 3x" class="Logos">
-            </center>
-        </div> -->
+        
         <div>
             <img src="img/scan-locations-b-g-r.jpg" srcset="img/scan-locations-b-g-r@2x.jpg 2x,
              img/scan-locations-b-g-r@3x.jpg 3x" class="ScanLocations_BGR">
@@ -134,33 +56,48 @@
                     </form>
                     <div id="scan-form" class=" offset-md-3 col-md-6 offset-sm-2 col-sm-5 scan-form overlay">
                         <div>
-                        	<header class="info  col-md-12">
-                        		<h6 class="col-md-5 col-sm-5 Is-this-information"> Is this information correct? </h6>
-                        		<h6 class="If-not-please-enter"> If not, please enter the correct information in the fields below</h6>
-                        		<hr class="line">
-                        	</header>
+                            <header class="info  col-md-12">
+                                <h6 class="col-md-5 col-sm-5 Is-this-information"> Is this information correct? </h6>
+                                <h6 class="If-not-please-enter"> If not, please enter the correct information in the fields below</h6>
+                                <hr class="line">
+                            </header>
                         </div>
                         <form class="form-inline" id="frmRequestScan" method="post" action="" novalidate="novalidate">
                             <input type="hidden" id="hdnScanBusiness" name="hdnScanBusiness" value="1">
                             <input type="hidden" id="businessNumber" name="businessNumber" value="">
                             <input type="hidden" id="zohoLeadId" name="zohoLeadId" value="">
-                            <div class="w-100">
-                                <input type="text" class="form-control requiredField placeholder {validate:{required:true, minlength:2, messages:{required:'', minlength:'Business Name should be > {0} characters.'}}}" maxlength="100" name="businessName" id="businessName" value="" placeholder="Business name">
-                                <select id="businessLocations" name="businessLocations" class="form-control requiredField placeholder {validate:{required:true, messages:{required:''}}}" placeholder="One location">
-                                    <option value="">Business locations</option>
-                                    <option value="1" selected="selected">1 location</option>
-                                    <option value="2-9">2-9 locations</option>
-                                    <option value="10-29">10-29 locations</option>
-                                    <option value="30-199">30-199 locations</option>
-                                    <option value="200+">200+ locations</option>
-                                    <option value="agency">Agency</option>
-                                </select>
-                            </div>
-                            <div class="w-100 businessFields">
-                                <input type="text" class="form-control requiredField placeholder {validate:{required:true, phoneUS:true, messages:{required:'', phoneUS:'Please enter a valid Phone Number.'}}}" name="businessPhone" id="businessPhone" value="" placeholder="Business phone">
-                                <input type="text" class="form-control requiredField placeholder {validate:{required:true, postalcode:true, messages:{required:'', postalcode:'Please enter a valid Zipcode.'}}}" maxlength="100" name="zip" id="zip" value="" placeholder="Business zip code">
-                            </div>
-                            <button type="submit" class="submit-btn">Scan Now</button>
+                            
+                            <table class="inputTable table col-md-12 ">
+                                <tr>
+                                    <td class="col-md-6">
+                                    <label for="businessName"> Business Name </label>
+                                        <input type="text" class="control requiredField placeholder {validate:{required:true, minlength:2, messages:{required:'', minlength:'Business Name should be > {0} characters.'}}}" maxlength="100" name="businessName" id="businessName" value="" placeholder="Business name">
+                                    </td>
+                                    <td class="col-md-6" >
+                                    <label for="zip"> Zip Code </label>
+                                        <input type="text" class="control requiredField placeholder {validate:{required:true, postalcode:true, messages:{required:'', postalcode:'Please enter a valid Zipcode.'}}}" maxlength="100" name="zip" id="zip" value="" placeholder="Business zip code">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-6">
+                                    <label for="businessPhone"> Business Phone</label>
+                                        <input type="text" class="control requiredField  placeholder {validate:{required:true, phoneUS:true, messages:{required:'', phoneUS:'Please enter a valid Phone Number.'}}}" name="businessPhone" id="businessPhone" value="" placeholder="Business phone">
+                                    </td>
+                                    <td class="col-md-6">
+                                    <label for="businessLocations"> Locations </label>
+                                        <select id="businessLocations" name="businessLocations" class="control requiredField placeholder {validate:{required:true, messages:{required:''}}}" placeholder="One location">
+                                            <option value="">Business locations</option>
+                                            <option value="1" selected="selected">1 location</option>
+                                            <option value="2-9">2-9 locations</option>
+                                            <option value="10-29">10-29 locations</option>
+                                            <option value="30-199">30-199 locations</option>
+                                            <option value="200+">200+ locations</option>
+                                            <option value="agency">Agency</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                             <button type="submit" class="submit-btn">Scan Now</button>
                         </form>
                     </div>
                 </div>
