@@ -8,6 +8,8 @@
      var infowindow = new google.maps.InfoWindow();
      var infowindowContent = document.getElementById('infowindow-content');
      infowindow.setContent(infowindowContent);
+     var results = document.getElementsByClassName("pac-container");
+     console.log(results);
      google.maps.event.addListener(autocomplete, 'place_changed', function() {
          //wanna show form and then populate it 
          form.style.display = "block";
