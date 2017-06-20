@@ -1,0 +1,77 @@
+body{
+}
+
+
+
+
+.ScanLocations_BGR {
+  width: 100%;
+  object-fit: contain;
+  z-index: -100;
+  top: 0;
+  position: fixed;
+}
+.Logo_White {
+  width: 117px;
+  height: 28px;
+  object-fit: contain;
+}
+.Background {
+  width: 160px;
+  height: 36px;
+  margin-right: 0;
+  margin-left: auto;
+  border-radius: 2px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 0 rgba(255, 255, 255, 0.13);
+  border: solid 1px #f4f4f4;
+}
+.number {
+  width: 160px;
+  height: 15px;
+  font-family: Roboto;
+  font-size: 13px;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px;
+}
+.hkb-site-search 
+.input {
+  width: 540px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: #ffffff;
+}
+.CheckBusiness{
+  width: 540px;
+  height: 84px;
+  font-family: "Roboto Slab", bold;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 1.11;
+  text-align: center;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 8%;
+}
+.submit-btn {
+  width: 173px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #1875f0;
+  margin-top: 43px;
+}
+.As-seen-on {
+	margin-top: 13%;
+  width: 73.9px;
+  height: 33.6px;
+  font-family: "Roboto Slab", thin;
+  font-size: 14.4px;
+  font-weight: bold;
+  line-height: 2.33;
+  text-align: center;
+  color: #ffffff;
+}
+.Logos {
+  object-fit: contain;
+}
+}
