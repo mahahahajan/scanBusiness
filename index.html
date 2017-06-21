@@ -1,113 +1,159 @@
 <!DOCTYPE HTML>
 <html>
 
-    <head>
-        <title>Scan Business</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
-        <!-- Optional theme -->
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <link data-olark="true" rel="stylesheet" href="https://static.olark.com/jsclient/styles/artsy-albatross/theme.css" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_yPQ0V9xYXt-u8VrwCUqcw4WDmiL4mds&libraries=places"></script>
-        <link href="style.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <link rel="stylesheet" type="text/css" href="css.css">
-        <script type="text/javascript" src="main.js"></script>
-    </head>
+  <head>
+    <title>Scan Business</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <!-- Optional theme -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link data-olark="true" rel="stylesheet" href="https://static.olark.com/jsclient/styles/artsy-albatross/theme.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_yPQ0V9xYXt-u8VrwCUqcw4WDmiL4mds&libraries=places"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script type="text/javascript" src="main.js"></script>
+  </head>
 
-    <body>
-        
+  <body>
+    <div class="header">
+      <section>
         <div>
-            <img src="img/scan-locations-b-g-r.jpg" srcset="img/scan-locations-b-g-r@2x.jpg 2x,
+          <img src="img/scan-locations-b-g-r.jpg" srcset="img/scan-locations-b-g-r@2x.jpg 2x,
              img/scan-locations-b-g-r@3x.jpg 3x" class="ScanLocations_BGR">
-            <header itemscope="">
-                <div class="col-md-12 col-sm-12 navBar">
-                    <!-- .site-logo -->
-                    <div class="col-md-6 col-sm-6 navLeft">
-                        <a href="#">
-                            <img alt="" class="Logo-White" src="img/logo-white.svg">
-                        </a>
-                    </div>
-                    <!-- /.site-logo -->
-                    <!-- .nav-primary -->
-                    <div class="offset-md-6 col-md-6 navRight">
-                        <div class="Background">
-                            <div class="number"> 1 800 561 3357 </div>
-                        </div>
-                    </div>
-                    <!-- /.nav-primary -->
+          <header>
+            <div class="col-md-12 col-sm-12 navBar">
+              <!-- .site-logo -->
+              <div class="col-md-6 col-sm-6 navLeft">
+                <a href="#">
+                  <img alt="" class="Logo-White" src="img/logo-white.svg">
+                </a>
+              </div>
+              <!-- /.site-logo -->
+              <!-- .nav-primary -->
+              <div class="offset-md-6 col-md-6 navRight">
+                <div class="Background">
+                  <div class="number"> 1 800 561 3357 </div>
                 </div>
-            </header>
-            <!-- /.site-header -->
-        </div>
-        </div>
-        <!-- /.site-header__search -->
-        </div>
-        <br>
-        <center>
+              </div>
+              <!-- /.nav-primary -->
+            </div>
+          </header>
+          <!-- /.site-header -->
+          <!-- /.site-header__search -->
+          <br>
+          <center>
             <div>
-                <div class="container">
-                    <h1 class="CheckBusiness"> Check how your business appears online </h1>
-                    <form class="input" method="get" action="#">
-                        <input id="hkb-search" class="input" type="text" value="" placeholder="Search for your business" name="s" autocomplete="off">
-                    </form>
-                    <div id="scan-form" class=" offset-md-3 col-md-6 offset-sm-2 col-sm-5 scan-form overlay">
-                        <div>
-                            <header class="info  col-md-12">
-                                <h6 class="col-md-5 col-sm-5 Is-this-information"> Is this information correct? </h6>
-                                <h6 class="If-not-please-enter"> If not, please enter the correct information in the fields below</h6>
-                                <hr class="line">
-                            </header>
-                        </div>
-                        <form class="form-inline" id="frmRequestScan" method="post" action="" novalidate="novalidate">
-                            <input type="hidden" id="hdnScanBusiness" name="hdnScanBusiness" value="1">
-                            <input type="hidden" id="businessNumber" name="businessNumber" value="">
-                            <input type="hidden" id="zohoLeadId" name="zohoLeadId" value="">
-                            
-                            <table class="inputTable table col-md-12 ">
-                                <tr>
-                                    <td class="col-md-6">
-                                    <label for="businessName"> Business Name </label>
-                                        <input type="text" class="control requiredField placeholder {validate:{required:true, minlength:2, messages:{required:'', minlength:'Business Name should be > {0} characters.'}}}" maxlength="100" name="businessName" id="businessName" value="" placeholder="Business name">
-                                    </td>
-                                    <td class="col-md-6" >
-                                    <label for="zip"> Zip Code </label>
-                                        <input type="text" class="control requiredField placeholder {validate:{required:true, postalcode:true, messages:{required:'', postalcode:'Please enter a valid Zipcode.'}}}" maxlength="100" name="zip" id="zip" value="" placeholder="Business zip code">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-6">
-                                    <label for="businessPhone"> Business Phone</label>
-                                        <input type="text" class="control requiredField  placeholder {validate:{required:true, phoneUS:true, messages:{required:'', phoneUS:'Please enter a valid Phone Number.'}}}" name="businessPhone" id="businessPhone" value="" placeholder="Business phone">
-                                    </td>
-                                    <td class="col-md-6">
-                                    <label for="businessLocations"> Locations </label>
-                                        <select id="businessLocations" name="businessLocations" class="control requiredField placeholder {validate:{required:true, messages:{required:''}}}" placeholder="One location">
-                                            <option value="">Business locations</option>
-                                            <option value="1" selected="selected">1 location</option>
-                                            <option value="2-9">2-9 locations</option>
-                                            <option value="10-29">10-29 locations</option>
-                                            <option value="30-199">30-199 locations</option>
-                                            <option value="200+">200+ locations</option>
-                                            <option value="agency">Agency</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                            </table>
-                             <button type="submit" class="submit-btn">Scan Now</button>
-                        </form>
-                    </div>
+              <div class="container">
+                <h1 class="CheckBusiness"> Check how your business appears online </h1>
+                <form class="input" method="get" action="#">
+                  <input id="hkb-search" class="input" type="text" value="" placeholder="Search for your business" name="s" autocomplete="off">
+                </form>
+                <div id="scan-form" class=" col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-5 scan-form overlay">
+                  <div>
+                    <header class="info  col-md-12">
+                      <h6 class="col-md-5 col-sm-5 Is-this-information"> Is this information correct? </h6>
+                      <h6 class="If-not-please-enter"> If not, please enter the correct information in the fields below</h6>
+                      <hr class="line">
+                    </header>
+                  </div>
+                  <form class="form-inline" id="frmRequestScan" method="post" action="" novalidate="novalidate">
+                    <input type="hidden" id="hdnScanBusiness" name="hdnScanBusiness" value="1">
+                    <input type="hidden" id="businessNumber" name="businessNumber" value="">
+                    <input type="hidden" id="zohoLeadId" name="zohoLeadId" value="">
+                    <table class="inputTable table col-md-12 ">
+                      <tr>
+                        <td class="col-md-6">
+                          <label for="businessName"> Business Name </label>
+                          <input type="text" class="control requiredField placeholder {validate:{required:true, minlength:2, messages:{required:'', minlength:'Business Name should be > {0} characters.'}}}" maxlength="100" name="businessName" id="businessName" value="" placeholder="Business name">
+                        </td>
+                        <td class="col-md-6">
+                          <label for="zip"> Zip Code </label>
+                          <input type="text" class="control requiredField placeholder {validate:{required:true, postalcode:true, messages:{required:'', postalcode:'Please enter a valid Zipcode.'}}}" maxlength="100" name="zip" id="zip" value="" placeholder="Business zip code">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-6">
+                          <label for="businessPhone"> Business Phone</label>
+                          <input type="text" class="control requiredField  placeholder {validate:{required:true, phoneUS:true, messages:{required:'', phoneUS:'Please enter a valid Phone Number.'}}}" name="businessPhone" id="businessPhone" value="" placeholder="Business phone">
+                        </td>
+                        <td class="col-md-6">
+                          <label for="businessLocations"> Locations </label>
+                          <select id="businessLocations" name="businessLocations" class="control requiredField placeholder {validate:{required:true, messages:{required:''}}}" placeholder="One location">
+                            <option value="">Business locations</option>
+                            <option value="1" selected="selected">1 location</option>
+                            <option value="2-9">2-9 locations</option>
+                            <option value="10-29">10-29 locations</option>
+                            <option value="30-199">30-199 locations</option>
+                            <option value="200+">200+ locations</option>
+                            <option value="agency">Agency</option>
+                          </select>
+                        </td>
+                      </tr>
+                    </table>
+                    <button type="submit" class="submit-btn">Scan My Business</button>
+                  </form>
                 </div>
-            </div>
-            <div class="As-seen-on" id="seen">
+              </div>
+              <div class="As-seen-on" id="seen">
                 <h6> As seen on </h6>
-            </div>
-            <img src="img/logos.png" srcset="img/logos.png 1x, img/logos@2x.png 2x,
+              </div>
+              <img src="img/logos.png" srcset="img/logos.png 1x, img/logos@2x.png 2x,
              img/logos@3x.png 3x" class="Logos">
-        </center>
-    </body>
+          </center>
+      </section>
+      </div>
+      <div class="infoSec">
+        <section>
+          <center>
+            <h2 class="Why-your-online-pres"> Why does your online presence matter? </h2>
+          </center>
+          <div class="row" style="margin-top: 2.4%; margin-bottom: 2.4%;">
+            <div class="col-md-3 col-md-offset-2">
+              <p class="listings"> Your local listings, especially Name, Address and Phone (NAP), are the third most important factor in search engine rankings - if they aren’t consistent, neither search engines nor customers can find your business online.
+                <br>
+                <br>Find all listings inaccuracies, fix them, repeat. BirdEye ensures all your business information stays accurate and up-to-date across 50+ sites, online maps, apps, and directories, turning search results into your competitive advantage. </p>
+            </div>
+            <div class="col-md-offset-6">
+              <img src="img/p-r-e-s-e-n-c-e@3x.png" srcset="img/p-r-e-s-e-n-c-e.png 1x, img/p-r-e-s-e-n-c-e@2x.png 2x,
+             img/p-r-e-s-e-n-c-e@3x.png 3x" class="PRESENCE">
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="banner">
+        <section>
+          <div>
+            <center>
+              <p class="searches">“85% of searches for products, services and local businesses happens online” (Forbes, 2017)</h6>
+                <h3 class="control"> Take control of your business presence so you don’t just show up in search results - you stand out. </h3>
+            </center>
+          </div>
+        </section>
+      </div>
+      <div class="end">
+        <section>
+          <div class="container">
+            <center>
+              <h1 class="CheckBusiness" id="dark"> Check how your business appears online </h1>
+              <button type="submit" class="submit-btn" id="small">Scan My Business</button>
+            </center>
+          </div>
+        </section>
+      </div>
+      <footer class="end">
+        <div>
+          <hr class="endLine">
+          <div class="row">
+            <img src="#" class="col-md-offset-2 col-md-1">
+            <p class="col-md-offset-9 copyright"> © BirdEye.com, 2016 </p>
+          </div>
+        </div>
+      </footer>
+  </body>
 
 </html>
