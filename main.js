@@ -1,4 +1,7 @@
  window.onload = function main() {
+     
+     //window.location.href = "scanned.html";
+
      var form = document.getElementById('scan-form');
      form.style.display = 'none';
      var input = document.getElementById('hkb-search');
@@ -9,6 +12,7 @@
      var infowindowContent = document.getElementById('infowindow-content');
      infowindow.setContent(infowindowContent);
      var results = document.getElementsByClassName("pac-container");
+     
      console.log(results);
      google.maps.event.addListener(autocomplete, 'place_changed', function() {
          //wanna show form and then populate it 
