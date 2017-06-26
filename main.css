@@ -204,11 +204,11 @@ label{
   background-image: url(img/ic-place-black-24-px.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 45%;
+  background-size: 30%;
 }
 .pac-item{
 	width: 100%;
-  height: 16.8%;
+  height: 20%;
   border-radius: 6px;
 }
 .pac-container{
@@ -303,4 +303,20 @@ label{
   text-align: center;
   color: #ffffff;
   color: white;
+}
+.pac-container:after {
+    /* Disclaimer: not needed to show 'powered by Google' if also a Google Map is shown */
+
+    background-image: none !important;
+    height: 0%;
+}
+.pac-item{
+  background-color: white;
+}
+.pac-container, .pac-item {
+    padding-bottom: 2%;
+    height: inherit !important;
+}
+.pac-item-query{
+  display: table;
 }
