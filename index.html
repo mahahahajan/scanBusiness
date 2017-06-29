@@ -15,12 +15,14 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_yPQ0V9xYXt-u8VrwCUqcw4WDmiL4mds&libraries=places"></script>
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     <link rel="stylesheet" type="text/css" href="css.css">
-
+    
     
     <script id="embeddedJS">if(typeof Pace!=='undefined'){Pace.start();}var BF=(typeof module!=="undefined"&&module.exports)||{};BF.env=(typeof module!=="undefined"&&module.exports)||{};(function(exports){exports.productName='BirdEye';exports.smallProductName='birdeye';exports.wwwroot='/';exports.apiroot='/bfapi/';exports.host='birdeye.com';exports.path={lapi:'https://birdeye.com/papi/'};exports.blogroot='https://birdeye.com/blog/';exports.handleApiErrors='true';exports.isSrcCDN='true';exports.env='prod';exports.CDN_BASE='d3cnqzq0ivprch.cloudfront.net';exports.WEBSITE_CDN_BASE='cdn.birdeye.com';exports.domain='birdeye.com';exports.businessImageCdnBase='https://ddjkm7nmu27lx.cloudfront.net/';exports.search={"key":"uu7qrdki2HkQ7H7yf3diI92dkQ6uy7Hd","categoryListLimit":3,"sort":"relevance","seoIndexLimit":100};exports.scanBusinessFindAPIHost='reviews.birdeye.com';exports.isDualScanBusinessFormEnabled=false;exports.isDeleteCategoriesEnabled=false;exports.fbAppId='113069365515461';exports.validate={};exports.validate.email=[7,100];exports.ugaCode='UA-36823741-1';exports.fbValue='10.00';exports.isGAEnabled=false;exports.tradeshowServerHost='https://support.birdeye.com';exports.usageReportDownloadThreshold=200;})(BF.env);var fbAppId='113069365515461';(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;})(window,document.documentElement,'async-hide','dataLayer',500,{'GTM-WQMF69V':true});(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MP5KQWF');</script>
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="apiStyler.js"></script>
+    
   </head>
 
   <body>
@@ -30,18 +32,18 @@
           <img src="img/scan-locations-b-g-r.jpg" srcset="img/scan-locations-b-g-r@2x.jpg 2x,
              img/scan-locations-b-g-r@3x.jpg 3x" class="ScanLocations_BGR">
           <header>
-            <div class="col-md-12 col-sm-12 navBar">
+            <div class="row navBar">
               <!-- .site-logo -->
-              <div class="col-md-6 col-sm-6 navLeft">
+              <div class="col-md-6 col-xs-1 navLeft">
                 <a href="#">
                   <img alt="" class="Logo-White" src="img/logo-white.svg">
                 </a>
               </div>
               <!-- /.site-logo -->
               <!-- .nav-primary -->
-              <div class="offset-md-6 col-md-6 navRight">
+              <div class="col-md-offset-6 col-xs-offset-1 navRight">
                 <div class="Background">
-                  <div class="number"> 1 800 561 3357 </div>
+                  <div class="number"> <a class="number" href="tel:18005613357"> 1 800 561 3357 </a></div>
                 </div>
               </div>
               <!-- /.nav-primary -->
@@ -119,7 +121,7 @@
       </section>
       </div>
       <div class="infoSec">
-        <section>
+        <section style="">
           <center>
             <h2 class="Why-your-online-pres"> Why does your online presence matter? </h2>
           </center>

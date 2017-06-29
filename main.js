@@ -1,12 +1,14 @@
- window.onload = function main() {
+window.onload = function main() {
 
      //window.location.href = "scanned.html";
-     var types = [ "(establishment)"
- ];
+     
  var form = document.getElementById('scan-form');
  form.style.display = 'none';
  var input = document.getElementById('hkb-search');
- var autocomplete = new google.maps.places.Autocomplete(input, {type:["establishment"]});
+ var options = {                    
+    types: ["establishment"]
+};
+    autocomplete = new google.maps.places.Autocomplete(input, options);
 
 
  var infowindow = new google.maps.InfoWindow();
@@ -23,6 +25,9 @@
      var seenOn = document.getElementById('seen');
      // seenOn.style.marginTop = "5%";
      var place = autocomplete.getPlace();
+     localStorage.setItem("place", place.geometry);
+     localStorage.setItem("placeLat", place.geometry.lat);
+     localStorage.setItem("placeLng", place.geometry.lng);
      //name field
      var businessName = document.getElementById('businessName');
      businessName.value = place.name;
