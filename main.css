@@ -1,5 +1,6 @@
 body {
     background-color: #f8f8f8;
+    overflow-x: hidden;
 }
 
 .navBar {
@@ -88,7 +89,7 @@ select:focus {
 }
 
 .CheckBusiness {
-    width: 33.8%;
+    width: 38.8%;
     height: 11.2%;
     font-family: "Roboto Slab", bold;
     font-size: 38px;
@@ -117,7 +118,7 @@ select:focus {
 }
 
 .As-seen-on {
-    margin-top: 10%;
+    margin-top: 15%;
     width: 73.9px;
     height: 33.6px;
     font-family: "Roboto Slab", thin;
@@ -130,6 +131,9 @@ select:focus {
 
 .Logos {
     object-fit: contain;
+    max-width:90%;
+max-height:100%;
+
 }
 
 .scan-form {
@@ -146,7 +150,7 @@ select:focus {
 }
 
 .overlay {
-    position: fixed;
+    position: absolute;
     /* Sit on top of the page content */
     z-index: 2;
     /* Specify a stack order in case you're using a different order for other elements */
@@ -246,7 +250,7 @@ label {
     line-height: 1.11;
     text-align: center;
     color: #000000;
-    margin-top: 20%;
+    
     top: 0;
 }
 
@@ -283,7 +287,7 @@ label {
 }
 
 .controlBusiness {
-    width: 57.6%;
+    width: 80%;
     height: 29.2%;
     font-family: "Roboto Slab";
     font-size: 38px;
@@ -357,9 +361,10 @@ label {
     line-height: 500%;
 }
 
-@media (min-width: 768px) and (max-width: 1300px) {
+@media (min-width: 768px) and (max-width: 1200px) {
     .Why-your-online-pres {
-        margin-top: 10%;
+        width: 100%;
+        margin-top: 30%;
     }
     .Background {
         width: 35%;
@@ -367,11 +372,32 @@ label {
     .As-seen-on {
         margin-top: 5%;
     }
+    .ScanLocations_BGR {
+        width: auto;
+        background-position: center right;
+    }
 }
+@media (min-width: 1200px) and (max-width: 1400px){
+    .Why-your-online-pres {
+        margin-top: 8%;
+    }
+    .CheckBusiness{
+        margin-top: 3%;
+    }
 
-@media (min-width: 0px) and (max-width: 992px) {
+}
+@media (min-width: 1450px) {
+    .Why-your-online-pres{
+        margin-top: 7%;
+    }
+}
+@media (min-width: 0px) and (max-width: 767px) {
     body {
         background-color: #f8f8f8;
+        overflow-x: hidden;
+    }
+    .header {
+        margin-bottom: 33%;
     }
     .navBar {
         padding-top: 3.3%;
@@ -383,19 +409,105 @@ label {
         padding-right: 10%;
     }
     .ScanLocations_BGR {
-        width: 100%;
-        display: flex;
-        object-fit: contain;
-        z-index: -100;
-        top: 0;
-        position: absolute;
+        width: auto;
+        background-position: center right;
+        left: -186%;
     }
     .Background {
-        width: 35%;
+        width: 41%;
     }
     .number {}
     .Logo_White {
         width: 5%;
         object-fit: contain;
+    }
+    .CheckBusiness {
+        width: 100%;
+    }
+    .input {
+        width: initial;
+    }
+    .hdpi .pac-icon {
+        background-color: #1565c0;
+        background-image: url(img/ic-place-black-24-px.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30%;
+    }
+    .scan-form {
+        width: 90%;
+        margin-left: 1%;
+        margin-right: 0;
+        padding-bottom: 100%;
+    }
+    .As-seen-on {
+        margin-top: 70%;
+        width: 100%;
+    }
+    .olark-launch-button {
+        border-color: black;
+    }
+    .Why-your-online-pres {
+        width: 100%;
+        height: auto;
+    }
+    .explanation{
+        max-width: 95%;
+        text-align: center;
+        padding-left: 8%;
+        
+    }
+    .PRESENCE{
+        max-width: 100%;
+        height: auto;
+    }
+    .searches{
+        width: auto;
+    }
+    .controlBusiness{
+        width: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+    #small{
+        width: auto;
+    }
+    .BirdeyeLogo-horizontal{
+        width: 25%;
+    }
+}
+@media (min-width: 330px) and (max-width: 360px) {
+   .As-seen-on{
+    margin-top: 75%; 
+   }
+   
+
+}
+@media (min-width: 300px) and (max-width: 329px) {
+   .As-seen-on{
+    margin-top: 60%; 
+   }
+   .Why-your-online-pres {
+        width: 100%;
+        height: auto;
+        margin-top: 65%;
+    }
+
+}
+@media (min-width: 520px) and (max-width: 540px) {
+    .As-seen-on{
+        margin-top: 50%;
+    }
+
+}
+
+@media(min-width: 545px) and (max-width: 767px) {
+    .ScanLocations_BGR {
+        left: 0;
+    }
+    .As-seen-on {
+        margin-top: 40%;
+        width: 100%;
     }
 }
