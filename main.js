@@ -5,9 +5,14 @@ window.onload = function main() {
  var form = document.getElementById('scan-form');
  form.style.display = 'none';
  var input = document.getElementById('hkb-search');
+ geolocate();
  var options = {                    
-    types: ["establishment"]
+    types: ["establishment"],
+    offset: 3
 };
+
+var offset = 3;
+console.log(offset);
     autocomplete = new google.maps.places.Autocomplete(input, options);
 
 
@@ -50,3 +55,19 @@ window.onload = function main() {
  });
 
  }
+
+ function geolocate() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var geolocation = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+            var circle = new google.maps.Circle({
+              center: geolocation,
+              radius: position.coords.accuracy
+            });
+            autocomplete.setBounds(circle.getBounds());
+          });
+        }
+      }
